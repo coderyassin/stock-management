@@ -1,0 +1,20 @@
+server:
+  port: 7980
+spring:
+  application:
+    name: stock-management
+  datasource:
+    url: jdbc:mysql://localhost:3307/stock-management?userSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: yascode
+    password: yascode
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      properties:
+        hibernate:
+          format_sql: true
+logging:
+  level:
+    sql: debug
