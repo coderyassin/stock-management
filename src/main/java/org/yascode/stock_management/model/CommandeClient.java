@@ -2,6 +2,7 @@ package org.yascode.stock_management.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.yascode.stock_management.util.enums.EtatCommande;
 
 import java.time.Instant;
 import java.util.List;
